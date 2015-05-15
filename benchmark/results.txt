@@ -1,0 +1,452 @@
+
+> speed-date@0.0.0 benchmark /home/james/Development/speed-date
+> node benchmark/benchmark.js
+
+Testing format: M
+moment x 488,012 ops/sec ±1.05% (96 runs sampled)
+speed-date x 272,301 ops/sec ±2.19% (96 runs sampled)
+speed-date (cached) x 6,612,530 ops/sec ±0.95% (97 runs sampled)
+speed-date (stored function) x 7,019,021 ops/sec ±0.81% (95 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: Mo
+moment x 435,365 ops/sec ±1.47% (94 runs sampled)
+speed-date x 192,941 ops/sec ±0.94% (97 runs sampled)
+speed-date (cached) x 5,828,912 ops/sec ±0.95% (97 runs sampled)
+speed-date (stored function) x 6,164,245 ops/sec ±0.68% (98 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: MM
+moment x 416,627 ops/sec ±1.80% (92 runs sampled)
+speed-date x 220,166 ops/sec ±1.04% (97 runs sampled)
+speed-date (cached) x 6,054,825 ops/sec ±1.69% (92 runs sampled)
+speed-date (stored function) x 5,657,314 ops/sec ±1.92% (94 runs sampled)
+Fastest is speed-date (cached)
+
+Testing format: MMM
+moment x 470,408 ops/sec ±0.90% (99 runs sampled)
+speed-date x 233,811 ops/sec ±0.57% (98 runs sampled)
+speed-date (cached) x 6,124,512 ops/sec ±0.45% (98 runs sampled)
+speed-date (stored function) x 6,473,370 ops/sec ±0.69% (97 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: MMMM
+moment x 460,407 ops/sec ±1.83% (97 runs sampled)
+speed-date x 223,316 ops/sec ±0.63% (96 runs sampled)
+speed-date (cached) x 6,001,505 ops/sec ±0.92% (90 runs sampled)
+speed-date (stored function) x 6,154,935 ops/sec ±1.08% (94 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: Q
+moment x 431,908 ops/sec ±1.25% (93 runs sampled)
+speed-date x 275,837 ops/sec ±0.93% (98 runs sampled)
+speed-date (cached) x 5,199,381 ops/sec ±0.92% (94 runs sampled)
+speed-date (stored function) x 5,598,130 ops/sec ±0.97% (94 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: D
+moment x 462,935 ops/sec ±1.55% (94 runs sampled)
+speed-date x 253,336 ops/sec ±1.59% (88 runs sampled)
+speed-date (cached) x 5,987,978 ops/sec ±1.03% (95 runs sampled)
+speed-date (stored function) x 6,228,506 ops/sec ±1.29% (91 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: Do
+moment x 367,825 ops/sec ±5.91% (86 runs sampled)
+speed-date x 182,682 ops/sec ±1.73% (93 runs sampled)
+speed-date (cached) x 5,037,057 ops/sec ±3.44% (94 runs sampled)
+speed-date (stored function) x 5,876,743 ops/sec ±0.64% (97 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: DD
+moment x 397,213 ops/sec ±1.07% (94 runs sampled)
+speed-date x 230,095 ops/sec ±1.03% (92 runs sampled)
+speed-date (cached) x 5,385,342 ops/sec ±1.66% (92 runs sampled)
+speed-date (stored function) x 5,786,296 ops/sec ±1.01% (94 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: DDD
+moment x 67,767 ops/sec ±0.97% (96 runs sampled)
+speed-date x 170,590 ops/sec ±0.82% (94 runs sampled)
+speed-date (cached) x 1,125,436 ops/sec ±0.81% (94 runs sampled)
+speed-date (stored function) x 1,109,274 ops/sec ±1.62% (94 runs sampled)
+Fastest is speed-date (cached),speed-date (stored function)
+
+Testing format: DDDo
+moment x 66,395 ops/sec ±1.32% (95 runs sampled)
+speed-date x 121,424 ops/sec ±1.48% (92 runs sampled)
+speed-date (cached) x 944,357 ops/sec ±0.94% (98 runs sampled)
+speed-date (stored function) x 1,098,720 ops/sec ±2.87% (88 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: DDDD
+moment x 64,853 ops/sec ±0.99% (96 runs sampled)
+speed-date x 130,727 ops/sec ±1.35% (91 runs sampled)
+speed-date (cached) x 1,088,545 ops/sec ±1.85% (92 runs sampled)
+speed-date (stored function) x 1,093,393 ops/sec ±0.64% (98 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: d
+moment x 607,804 ops/sec ±5.04% (87 runs sampled)
+speed-date x 275,448 ops/sec ±0.93% (92 runs sampled)
+speed-date (cached) x 5,879,963 ops/sec ±0.84% (92 runs sampled)
+speed-date (stored function) x 5,750,157 ops/sec ±1.57% (95 runs sampled)
+Fastest is speed-date (cached),speed-date (stored function)
+
+Testing format: do
+moment x 551,136 ops/sec ±3.07% (88 runs sampled)
+speed-date x 197,456 ops/sec ±1.10% (94 runs sampled)
+speed-date (cached) x 5,174,343 ops/sec ±1.50% (94 runs sampled)
+speed-date (stored function) x 5,395,320 ops/sec ±2.28% (93 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: dd
+moment x 667,393 ops/sec ±1.91% (94 runs sampled)
+speed-date x 229,803 ops/sec ±0.70% (96 runs sampled)
+speed-date (cached) x 5,719,664 ops/sec ±0.58% (92 runs sampled)
+speed-date (stored function) x 6,019,291 ops/sec ±0.71% (94 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: ddd
+moment x 694,245 ops/sec ±1.49% (97 runs sampled)
+speed-date x 223,077 ops/sec ±1.20% (97 runs sampled)
+speed-date (cached) x 5,747,366 ops/sec ±0.77% (95 runs sampled)
+speed-date (stored function) x 5,653,207 ops/sec ±3.34% (90 runs sampled)
+Fastest is speed-date (cached)
+
+Testing format: dddd
+moment x 674,540 ops/sec ±2.12% (94 runs sampled)
+speed-date x 222,946 ops/sec ±0.53% (95 runs sampled)
+speed-date (cached) x 5,459,473 ops/sec ±1.31% (98 runs sampled)
+speed-date (stored function) x 5,926,439 ops/sec ±1.13% (96 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: e
+moment x 492,888 ops/sec ±0.87% (86 runs sampled)
+speed-date x 261,913 ops/sec ±2.51% (95 runs sampled)
+speed-date (cached) x 5,641,665 ops/sec ±1.09% (92 runs sampled)
+speed-date (stored function) x 6,105,653 ops/sec ±0.87% (97 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: E
+moment x 564,285 ops/sec ±3.03% (96 runs sampled)
+speed-date x 275,507 ops/sec ±1.16% (95 runs sampled)
+speed-date (cached) x 5,537,111 ops/sec ±1.46% (87 runs sampled)
+speed-date (stored function) x 5,983,445 ops/sec ±3.35% (89 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: w
+moment x 50,442 ops/sec ±0.69% (98 runs sampled)
+speed-date x 118,557 ops/sec ±1.04% (96 runs sampled)
+speed-date (cached) x 708,986 ops/sec ±0.79% (98 runs sampled)
+speed-date (stored function) x 732,790 ops/sec ±0.50% (96 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: wo
+moment x 50,351 ops/sec ±0.74% (99 runs sampled)
+speed-date x 89,402 ops/sec ±1.34% (89 runs sampled)
+speed-date (cached) x 706,324 ops/sec ±0.63% (99 runs sampled)
+speed-date (stored function) x 685,506 ops/sec ±0.59% (96 runs sampled)
+Fastest is speed-date (cached)
+
+Testing format: ww
+moment x 47,480 ops/sec ±0.86% (95 runs sampled)
+speed-date x 100,378 ops/sec ±4.18% (90 runs sampled)
+speed-date (cached) x 643,240 ops/sec ±3.24% (95 runs sampled)
+speed-date (stored function) x 659,776 ops/sec ±2.75% (96 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: W
+moment x 46,417 ops/sec ±3.28% (96 runs sampled)
+speed-date x 122,743 ops/sec ±0.62% (99 runs sampled)
+speed-date (cached) x 710,797 ops/sec ±0.78% (95 runs sampled)
+speed-date (stored function) x 740,730 ops/sec ±0.63% (98 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: Wo
+moment x 47,326 ops/sec ±1.05% (96 runs sampled)
+speed-date x 89,106 ops/sec ±0.97% (94 runs sampled)
+speed-date (cached) x 696,554 ops/sec ±1.22% (97 runs sampled)
+speed-date (stored function) x 698,785 ops/sec ±1.14% (91 runs sampled)
+Fastest is speed-date (stored function),speed-date (cached)
+
+Testing format: WW
+moment x 48,001 ops/sec ±0.86% (96 runs sampled)
+speed-date x 101,960 ops/sec ±1.07% (95 runs sampled)
+speed-date (cached) x 685,671 ops/sec ±1.46% (92 runs sampled)
+speed-date (stored function) x 714,895 ops/sec ±0.93% (93 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: YY
+moment x 334,366 ops/sec ±0.78% (92 runs sampled)
+speed-date x 251,430 ops/sec ±0.99% (97 runs sampled)
+speed-date (cached) x 5,601,878 ops/sec ±1.18% (92 runs sampled)
+speed-date (stored function) x 6,125,044 ops/sec ±0.88% (93 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: YYYY
+moment x 325,519 ops/sec ±2.17% (91 runs sampled)
+speed-date x 289,016 ops/sec ±1.00% (94 runs sampled)
+speed-date (cached) x 5,484,957 ops/sec ±0.93% (88 runs sampled)
+speed-date (stored function) x 6,067,453 ops/sec ±0.99% (91 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: gg
+moment x 46,957 ops/sec ±1.02% (97 runs sampled)
+speed-date x 111,375 ops/sec ±0.74% (94 runs sampled)
+speed-date (cached) x 608,033 ops/sec ±0.97% (96 runs sampled)
+speed-date (stored function) x 621,041 ops/sec ±2.63% (95 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: gggg
+moment x 47,317 ops/sec ±0.69% (95 runs sampled)
+speed-date x 116,266 ops/sec ±0.74% (96 runs sampled)
+speed-date (cached) x 627,123 ops/sec ±0.98% (97 runs sampled)
+speed-date (stored function) x 649,795 ops/sec ±0.65% (100 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: GG
+moment x 43,289 ops/sec ±2.88% (93 runs sampled)
+speed-date x 114,244 ops/sec ±0.86% (98 runs sampled)
+speed-date (cached) x 686,965 ops/sec ±1.88% (90 runs sampled)
+speed-date (stored function) x 659,893 ops/sec ±1.77% (92 runs sampled)
+Fastest is speed-date (cached)
+
+Testing format: GGGG
+moment x 45,751 ops/sec ±0.89% (97 runs sampled)
+speed-date x 113,904 ops/sec ±0.80% (97 runs sampled)
+speed-date (cached) x 701,223 ops/sec ±2.66% (94 runs sampled)
+speed-date (stored function) x 733,288 ops/sec ±0.93% (97 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: A
+moment x 329,656 ops/sec ±0.72% (99 runs sampled)
+speed-date x 280,763 ops/sec ±0.85% (98 runs sampled)
+speed-date (cached) x 5,667,335 ops/sec ±0.74% (94 runs sampled)
+speed-date (stored function) x 6,187,444 ops/sec ±0.61% (96 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: a
+moment x 322,693 ops/sec ±1.21% (90 runs sampled)
+speed-date x 276,788 ops/sec ±0.79% (94 runs sampled)
+speed-date (cached) x 5,461,605 ops/sec ±0.73% (97 runs sampled)
+speed-date (stored function) x 5,932,732 ops/sec ±1.29% (95 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: H
+moment x 381,407 ops/sec ±1.69% (94 runs sampled)
+speed-date x 287,596 ops/sec ±1.02% (97 runs sampled)
+speed-date (cached) x 5,222,595 ops/sec ±3.95% (93 runs sampled)
+speed-date (stored function) x 6,190,041 ops/sec ±0.87% (95 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: HH
+moment x 322,301 ops/sec ±2.58% (96 runs sampled)
+speed-date x 221,065 ops/sec ±1.14% (96 runs sampled)
+speed-date (cached) x 5,292,459 ops/sec ±0.90% (95 runs sampled)
+speed-date (stored function) x 5,792,534 ops/sec ±0.83% (94 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: h
+moment x 354,473 ops/sec ±2.33% (89 runs sampled)
+speed-date x 239,623 ops/sec ±3.05% (92 runs sampled)
+speed-date (cached) x 5,392,359 ops/sec ±0.94% (90 runs sampled)
+speed-date (stored function) x 5,979,184 ops/sec ±0.71% (97 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: hh
+moment x 324,961 ops/sec ±1.36% (96 runs sampled)
+speed-date x 206,019 ops/sec ±0.91% (98 runs sampled)
+speed-date (cached) x 5,087,972 ops/sec ±0.78% (89 runs sampled)
+speed-date (stored function) x 5,398,550 ops/sec ±1.40% (92 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: m
+moment x 374,535 ops/sec ±1.28% (96 runs sampled)
+speed-date x 284,617 ops/sec ±0.98% (91 runs sampled)
+speed-date (cached) x 5,662,964 ops/sec ±0.74% (96 runs sampled)
+speed-date (stored function) x 6,044,188 ops/sec ±2.22% (90 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: mm
+moment x 353,923 ops/sec ±1.79% (87 runs sampled)
+speed-date x 220,554 ops/sec ±1.13% (91 runs sampled)
+speed-date (cached) x 5,385,570 ops/sec ±0.91% (96 runs sampled)
+speed-date (stored function) x 5,934,207 ops/sec ±0.84% (94 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: s
+moment x 377,401 ops/sec ±1.43% (97 runs sampled)
+speed-date x 286,282 ops/sec ±0.76% (95 runs sampled)
+speed-date (cached) x 5,473,084 ops/sec ±3.16% (88 runs sampled)
+speed-date (stored function) x 6,157,275 ops/sec ±0.73% (97 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: ss
+moment x 345,591 ops/sec ±1.23% (93 runs sampled)
+speed-date x 218,770 ops/sec ±2.39% (91 runs sampled)
+speed-date (cached) x 5,477,369 ops/sec ±1.00% (95 runs sampled)
+speed-date (stored function) x 5,913,101 ops/sec ±0.82% (95 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: S
+moment x 337,767 ops/sec ±1.45% (98 runs sampled)
+speed-date x 232,648 ops/sec ±0.98% (99 runs sampled)
+speed-date (cached) x 6,321,104 ops/sec ±1.08% (92 runs sampled)
+speed-date (stored function) x 6,935,308 ops/sec ±0.74% (94 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: SS
+moment x 288,314 ops/sec ±0.96% (93 runs sampled)
+speed-date x 229,791 ops/sec ±3.35% (91 runs sampled)
+speed-date (cached) x 6,753,106 ops/sec ±0.98% (97 runs sampled)
+speed-date (stored function) x 7,328,486 ops/sec ±0.91% (93 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: SSS
+moment x 299,732 ops/sec ±1.19% (95 runs sampled)
+speed-date x 305,105 ops/sec ±1.76% (93 runs sampled)
+speed-date (cached) x 6,661,933 ops/sec ±1.27% (94 runs sampled)
+speed-date (stored function) x 7,253,200 ops/sec ±1.19% (91 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: Z
+moment x 467,652 ops/sec ±3.47% (91 runs sampled)
+speed-date x 150,005 ops/sec ±1.20% (98 runs sampled)
+speed-date (cached) x 2,453,599 ops/sec ±2.27% (92 runs sampled)
+speed-date (stored function) x 2,616,315 ops/sec ±0.84% (96 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: ZZ
+moment x 539,226 ops/sec ±1.57% (93 runs sampled)
+speed-date x 152,953 ops/sec ±0.77% (96 runs sampled)
+speed-date (cached) x 2,676,704 ops/sec ±0.89% (94 runs sampled)
+speed-date (stored function) x 2,744,966 ops/sec ±0.92% (93 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: X
+moment x 432,249 ops/sec ±3.20% (87 runs sampled)
+speed-date x 274,343 ops/sec ±2.18% (91 runs sampled)
+speed-date (cached) x 4,399,537 ops/sec ±3.44% (93 runs sampled)
+speed-date (stored function) x 4,653,515 ops/sec ±1.48% (89 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: x
+moment x 476,561 ops/sec ±3.44% (88 runs sampled)
+speed-date x 334,491 ops/sec ±0.51% (100 runs sampled)
+speed-date (cached) x 7,629,296 ops/sec ±0.89% (91 runs sampled)
+speed-date (stored function) x 8,382,784 ops/sec ±0.92% (94 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: LT
+moment x 150,265 ops/sec ±1.02% (96 runs sampled)
+speed-date x 121,784 ops/sec ±3.81% (93 runs sampled)
+speed-date (cached) x 3,330,107 ops/sec ±2.25% (95 runs sampled)
+speed-date (stored function) x 3,447,326 ops/sec ±0.82% (97 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: LTS
+moment x 127,563 ops/sec ±1.96% (94 runs sampled)
+speed-date x 104,864 ops/sec ±1.23% (95 runs sampled)
+speed-date (cached) x 2,682,687 ops/sec ±1.09% (91 runs sampled)
+speed-date (stored function) x 2,666,708 ops/sec ±1.30% (91 runs sampled)
+Fastest is speed-date (cached),speed-date (stored function)
+
+Testing format: L
+moment x 149,652 ops/sec ±1.29% (96 runs sampled)
+speed-date x 110,645 ops/sec ±0.90% (93 runs sampled)
+speed-date (cached) x 3,276,222 ops/sec ±2.78% (93 runs sampled)
+speed-date (stored function) x 3,450,353 ops/sec ±0.90% (97 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: l
+moment x 142,661 ops/sec ±1.10% (98 runs sampled)
+speed-date x 132,947 ops/sec ±1.35% (93 runs sampled)
+speed-date (cached) x 3,438,781 ops/sec ±1.67% (90 runs sampled)
+speed-date (stored function) x 3,520,575 ops/sec ±1.67% (92 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: LL
+moment x 151,033 ops/sec ±1.96% (93 runs sampled)
+speed-date x 102,630 ops/sec ±1.11% (92 runs sampled)
+speed-date (cached) x 3,278,332 ops/sec ±0.96% (94 runs sampled)
+speed-date (stored function) x 3,277,127 ops/sec ±1.85% (94 runs sampled)
+Fastest is speed-date (cached)
+
+Testing format: ll
+moment x 139,972 ops/sec ±1.17% (97 runs sampled)
+speed-date x 104,608 ops/sec ±1.39% (95 runs sampled)
+speed-date (cached) x 3,252,001 ops/sec ±0.93% (97 runs sampled)
+speed-date (stored function) x 3,427,179 ops/sec ±1.10% (94 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: LLL
+moment x 93,280 ops/sec ±0.80% (96 runs sampled)
+speed-date x 70,539 ops/sec ±1.53% (96 runs sampled)
+speed-date (cached) x 2,459,377 ops/sec ±0.93% (96 runs sampled)
+speed-date (stored function) x 1,890,004 ops/sec ±1.01% (93 runs sampled)
+Fastest is speed-date (cached)
+
+Testing format: lll
+moment x 92,261 ops/sec ±0.64% (98 runs sampled)
+speed-date x 69,469 ops/sec ±3.34% (94 runs sampled)
+speed-date (cached) x 2,376,315 ops/sec ±1.28% (95 runs sampled)
+speed-date (stored function) x 2,370,111 ops/sec ±1.35% (87 runs sampled)
+Fastest is speed-date (cached),speed-date (stored function)
+
+Testing format: LLLL
+moment x 90,864 ops/sec ±0.88% (98 runs sampled)
+speed-date x 60,961 ops/sec ±0.99% (97 runs sampled)
+speed-date (cached) x 2,188,341 ops/sec ±1.18% (95 runs sampled)
+speed-date (stored function) x 2,263,459 ops/sec ±1.33% (94 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: llll
+moment x 88,996 ops/sec ±2.52% (94 runs sampled)
+speed-date x 60,629 ops/sec ±1.15% (96 runs sampled)
+speed-date (cached) x 1,955,497 ops/sec ±1.34% (93 runs sampled)
+speed-date (stored function) x 1,989,032 ops/sec ±1.48% (94 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: undefined
+moment x 142,605 ops/sec ±0.65% (96 runs sampled)
+speed-date x 60,493 ops/sec ±0.85% (98 runs sampled)
+speed-date (cached) x 1,150,788 ops/sec ±1.11% (92 runs sampled)
+speed-date (stored function) x 1,170,790 ops/sec ±1.04% (97 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: _
+moment x 525,820 ops/sec ±2.24% (93 runs sampled)
+speed-date x 295,567 ops/sec ±1.10% (93 runs sampled)
+speed-date (cached) x 7,546,130 ops/sec ±0.86% (98 runs sampled)
+speed-date (stored function) x 8,204,852 ops/sec ±0.71% (92 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: $&"(£)"
+moment x 449,056 ops/sec ±0.68% (96 runs sampled)
+speed-date x 132,483 ops/sec ±0.82% (96 runs sampled)
+speed-date (cached) x 3,225,667 ops/sec ±1.18% (93 runs sampled)
+speed-date (stored function) x 3,392,799 ops/sec ±0.78% (96 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: [hi]
+moment x 76,639 ops/sec ±0.82% (97 runs sampled)
+speed-date x 284,525 ops/sec ±1.10% (94 runs sampled)
+speed-date (cached) x 7,550,390 ops/sec ±2.76% (92 runs sampled)
+speed-date (stored function) x 8,247,119 ops/sec ±1.28% (93 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: [hi
+moment x 357,995 ops/sec ±2.88% (92 runs sampled)
+speed-date x 185,472 ops/sec ±1.20% (93 runs sampled)
+speed-date (cached) x 4,531,848 ops/sec ±1.84% (95 runs sampled)
+speed-date (stored function) x 4,619,255 ops/sec ±1.28% (95 runs sampled)
+Fastest is speed-date (stored function)
+
+Testing format: [today] dddd
+moment x 60,022 ops/sec ±0.95% (92 runs sampled)
+speed-date x 143,237 ops/sec ±1.26% (94 runs sampled)
+speed-date (cached) x 4,411,614 ops/sec ±3.01% (94 runs sampled)
+speed-date (stored function) x 4,687,592 ops/sec ±1.74% (95 runs sampled)
+Fastest is speed-date (stored function)
+

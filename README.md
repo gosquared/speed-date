@@ -48,4 +48,4 @@ Behaves the same as `speedDate`, but the generated formatter function is stored 
 
 ## But how fast is it actually?
 
-Well, run `npm run benchmark` to find out for yourself how it stacks up against Moment for various formatting tokens. On the whole speed-date is ~15-20x faster than Moment with repeated use of the same formatter function.
+Well, run `npm run benchmark` to find out for yourself how it stacks up against Moment for various formatting tokens. On the whole speed-date is ~15-20x faster than Moment with repeated use of the same formatter function. Check out [benchmark results](benchmark/results.txt) for an example run.
