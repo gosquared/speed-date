@@ -4,6 +4,7 @@ var speedDate = require('../index.js');
 
 
 var tokens = [
+  '',
   'M',
   'Mo',
   'MM',

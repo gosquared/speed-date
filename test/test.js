@@ -12,6 +12,7 @@ function check(d, fmt){
 }
 
 var tokens = [
+  '',
   'M',
   'Mo',
   'MM',
