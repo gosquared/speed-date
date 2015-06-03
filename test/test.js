@@ -11,6 +11,14 @@ function check(d, fmt){
   };
 }
 
+function checkUTC(d, fmt){
+  d = new Date(+d);
+
+  return function(){
+    assert.equal(speedDate.UTC.cached(fmt, d), moment.utc(d).format(fmt));
+  };
+}
+
 var tokens = [
   '',
   'M',
@@ -86,6 +94,14 @@ tokens.forEach(function(token){
     var d = new Date(0);
     while(d.getFullYear() < 2100){
       it('Agrees with moment for ' + token + ' on ' + d.toISOString(), check(d, token));
+      d = new Date(+d+1328427867);
+    }
+  });
+
+  describe(token + ' UTC', function(){
+    var d = new Date(0);
+    while(d.getFullYear() < 2100){
+      it('Agrees with moment for ' + token + ' on ' + d.toISOString(), checkUTC(d, token));
       d = new Date(+d+1328427867);
     }
   });
