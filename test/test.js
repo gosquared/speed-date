@@ -7,7 +7,7 @@ function check(d, fmt){
   d = new Date(+d);
 
   return function(){
-    assert.equal(speedDate.cached(fmt, d), moment(d).format(fmt));
+    assert.strictEqual(speedDate.cached(fmt, d), moment(d).format(fmt));
   };
 }
 
@@ -15,7 +15,7 @@ function checkUTC(d, fmt){
   d = new Date(+d);
 
   return function(){
-    assert.equal(speedDate.UTC.cached(fmt, d), moment.utc(d).format(fmt));
+    assert.strictEqual(speedDate.UTC.cached(fmt, d), moment.utc(d).format(fmt));
   };
 }
 
@@ -84,7 +84,9 @@ var tokens = [
   '$&"(£)"',
   '[hi]',
   '[hi',
-  '[today] dddd'
+  '[today] dddd',
+  'YYYYM', // make sure numeric tokens get concatenated rather than added
+  'HHYYYYM'
 ];
 
 // tokens = ['e'];
