@@ -94,17 +94,17 @@ var tokens = [
 tokens.forEach(function(token){
   describe(token, function(){
     var d = new Date(0);
-    while(d.getFullYear() < 2100){
-      it('Agrees with moment for ' + token + ' on ' + d.toISOString(), check(d, token));
-      d = new Date(+d+1328427867);
+    while(d.getFullYear() < 2050){
+      it(token + ' on ' + d.toISOString(), check(d, token));
+      d = new Date(+d+8328427867);
     }
   });
 
   describe(token + ' UTC', function(){
     var d = new Date(0);
-    while(d.getFullYear() < 2100){
-      it('Agrees with moment for ' + token + ' on ' + d.toISOString(), checkUTC(d, token));
-      d = new Date(+d+1328427867);
+    while(d.getFullYear() < 2050){
+      it(token + ' on ' + d.toISOString(), checkUTC(d, token));
+      d = new Date(+d+8328427867);
     }
   });
 });
