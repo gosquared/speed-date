@@ -45,7 +45,14 @@ When called with both `format` and `date`, creates a formatter function and appl
 
 Behaves the same as `speedDate`, but the generated formatter function is stored and reused if the same `format` is used again. Only use this if you know you're only going to be using a few different possible formats (they're never cleaned up internally).
 
+### **speedDate.UTC(format[, date])**
+
+Exactly the same as above, but always interprets the date as UTC. Obviousy, in this mode, `Z` and `ZZ` tokens will always be `+00:00` and `+0000` respectively. Similarly `speedDate.UTC.cached(format[, date])`.
 
 ## But how fast is it actually?
 
 Well, run `npm run benchmark` to find out for yourself how it stacks up against Moment for various formatting tokens. On the whole speed-date is ~15-20x faster than Moment with repeated use of the same formatter function. Check out [benchmark results](benchmark/results.txt) for an example run.
+
+## Is there any error handling or input validation?
+
+Nope. None at all. In the interests of performance, speed-date assumes that you're always passing in valid Date objects and sane formatting strings. If you give it an invalid Date, it won't handle it nicely, like how Moment returns "Invalid date". It'll probably return something with `NaN` and `undefined` all over the place. If you give it something that isn't a Date object at all, there's no telling what it'll do. It might return complete garbage, it might throw an error, it might set fire to your dog. So be careful.
