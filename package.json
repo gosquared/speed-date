@@ -12,8 +12,7 @@
   "devDependencies": {
     "mocha": "^2.2.5",
     "moment": "^2.10.3",
-    "benchmark": "^1.0.0",
-    "microtime": "^1.4.1"
+    "benchmark": "^1.0.0"
   },
   "repository": {
     "type": "git",
