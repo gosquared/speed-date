@@ -1,5 +1,11 @@
 # speed-date
 
+[![Travis](https://api.travis-ci.org/gosquared/speed-date.svg)](https://travis-ci.org/gosquared/speed-date)
+[![Dependencies](https://david-dm.org/gosquared/speed-date.svg)](https://david-dm.org/gosquared/speed-date)
+[![Join the chat at https://gitter.im/gosquared/speed-date](https://img.shields.io/badge/gitter-join%20chat-blue.svg)](https://gitter.im/gosquared/speed-date)
+
+[![NPM](https://nodei.co/npm/speed-date.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/speed-date)
+
 ### Format your dates really really fast
 
 So you have a date object in JavaScript. And you want to turn it into a string. Perhaps you want to format it a particular way, say `YYYY-MM-DD HH:mm:ss`.
