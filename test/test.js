@@ -27,6 +27,7 @@ var tokens = [
   'MMM',
   'MMMM',
   'Q',
+  'Qo',
   'D',
   'Do',
   'DD',
@@ -48,6 +49,7 @@ var tokens = [
   'WW',
   'YY',
   'YYYY',
+  'Y',
   'gg',
   'gggg',
   'GG',
@@ -58,6 +60,8 @@ var tokens = [
   'HH',
   'h',
   'hh',
+  'k',
+  'kk',
   'm',
   'mm',
   's',
@@ -65,6 +69,12 @@ var tokens = [
   'S',
   'SS',
   'SSS',
+  'SSSS',
+  'SSSSS',
+  'SSSSSS',
+  'SSSSSSS',
+  'SSSSSSSS',
+  'SSSSSSSSS',
   'Z',
   'ZZ',
   'X',
@@ -86,10 +96,13 @@ var tokens = [
   '[hi',
   '[today] dddd',
   'YYYYM', // make sure numeric tokens get concatenated rather than added
-  'HHYYYYM'
+  'HHYYYYM',
+  'SSSSSSSSSS',
+  'SSSSSSSSSSSS',
+  'SSSSSSSSSSSSSSSS' // some extra-long ones to make sure we get the max correct
 ];
 
-// tokens = ['e'];
+// tokens = [ undefined ];
 
 tokens.forEach(function(token){
   describe(token, function(){
