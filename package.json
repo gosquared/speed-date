@@ -1,6 +1,6 @@
 {
   "name": "speed-date",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "Format dates super-efficiently",
   "main": "index.js",
   "scripts": {
