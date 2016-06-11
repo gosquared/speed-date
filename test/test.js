@@ -104,20 +104,31 @@ var tokens = [
 
 // tokens = [ undefined ];
 
+
+var dates = [];
+
+var d = new Date(0);
+while(d.getFullYear() < 2050) {
+  dates.push(d);
+  d = new Date(+d+8328427867);
+}
+
+dates.push(
+  new Date(0, 0, 1, 0, 0, 0),
+  new Date(12345, 0, 1, 0, 0)
+);
+
+
 tokens.forEach(function(token){
   describe(token, function(){
-    var d = new Date(0);
-    while(d.getFullYear() < 2050){
+    dates.forEach(function(d) {
       it(token + ' on ' + d.toISOString(), check(d, token));
-      d = new Date(+d+8328427867);
-    }
+    });
   });
 
   describe(token + ' UTC', function(){
-    var d = new Date(0);
-    while(d.getFullYear() < 2050){
+    dates.forEach(function(d) {
       it(token + ' on ' + d.toISOString(), checkUTC(d, token));
-      d = new Date(+d+8328427867);
-    }
+    });
   });
 });
