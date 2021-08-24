@@ -1,25 +1,34 @@
 {
-  "name": "speed-date",
-  "version": "1.0.0",
-  "description": "Format dates super-efficiently",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha test/test.js",
-    "benchmark": "node benchmark/benchmark.js"
-  },
-  "author": "JT <jt@gosquared.com>",
-  "license": "ISC",
-  "devDependencies": {
-    "mocha": "^2.2.5",
-    "moment": "^2.10.3",
-    "benchmark": "^1.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/gosquared/speed-date.git"
-  },
-  "bugs": {
-    "url": "https://github.com/gosquared/speed-date/issues"
-  },
-  "homepage": "https://github.com/gosquared/speed-date"
+    "name": "speed-date",
+    "description": "A super-fast JavaScript date formatter.",
+    "version": "1.0.0",
+    "license": "ISC",
+    "main": "lib/speed-date.js",
+    "homepage": "https://github.com/gosquared/speed-date#readme",
+    "bugs": "https://github.com/gosquared/speed-date/issues",
+    "author": "JT <jt@gosquared.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gosquared/speed-date.git"
+    },
+    "scripts": {
+        "test": "mocha test/test.js",
+        "benchmark": "node benchmark/benchmark.js"
+    },
+    "keywords": [
+        "fast",
+        "date",
+        "time",
+        "speed",
+        "parse",
+        "moment",
+        "utility",
+        "performant",
+        "performance"
+    ],
+    "devDependencies": {
+        "mocha": "^2.2.5",
+        "moment": "^2.10.3",
+        "benchmark": "^1.0.0"
+    }
 }
