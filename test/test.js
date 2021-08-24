@@ -1,6 +1,6 @@
-var assert = require('assert');
-var moment = require('moment');
-var speedDate = require('../index.js');
+const assert = require('assert');
+const moment = require('moment');
+const speedDate = require('../lib/speed-date');
 
 function check(d, fmt) {
   d = new Date(+d);

@@ -1,6 +1,6 @@
-var Benchmark = require('benchmark');
-var moment = require('moment');
-var speedDate = require('../lib/speed-date');
+const Benchmark = require('benchmark');
+const moment = require('moment');
+const speedDate = require('../lib/speed-date');
 
 var tokens = [
   '',
