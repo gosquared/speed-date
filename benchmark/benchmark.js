@@ -2,7 +2,6 @@ var Benchmark = require('benchmark');
 var moment = require('moment');
 var speedDate = require('../index.js');
 
-
 var tokens = [
   '',
   'M',
@@ -68,40 +67,41 @@ var tokens = [
   '$&"(£)"',
   '[hi]',
   '[hi',
-  '[today] dddd'
+  '[today] dddd',
 ];
 
 // tokens = [ undefined ];
 
-tokens.forEach(function(tkn){
+tokens.forEach(function (tkn) {
   var suite = new Benchmark.Suite(String(tkn));
 
   console.log('Testing format: %s', tkn);
 
-  suite.add('moment', function(){
+  suite.add('moment', function () {
     moment(new Date(Math.random() * 1000000000)).format(tkn);
   });
 
-  suite.add('speed-date', function(){
+  suite.add('speed-date', function () {
     speedDate(tkn, new Date(Math.random() * 1000000000));
   });
 
-  suite.add('speed-date (cached)', function(){
+  suite.add('speed-date (cached)', function () {
     speedDate.cached(tkn, new Date(Math.random() * 1000000000));
   });
 
   var fmt = speedDate(tkn);
 
-  suite.add('speed-date (stored function)', function(){
+  suite.add('speed-date (stored function)', function () {
     fmt(new Date(Math.random() * 1000000000));
   });
 
-  suite.on('cycle', function(event) {
-    console.log(String(event.target));
-  })
-  .on('complete', function() {
-    console.log('Fastest is ' + this.filter('fastest').pluck('name') + '\n');
-  });
+  suite
+    .on('cycle', function (event) {
+      console.log(String(event.target));
+    })
+    .on('complete', function () {
+      console.log('Fastest is ' + this.filter('fastest').pluck('name') + '\n');
+    });
 
   suite.run();
 });
